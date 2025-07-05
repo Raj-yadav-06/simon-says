@@ -8,17 +8,30 @@ body {
 }
 
 /* Game Title */
+#startBtn{
+    padding: 10px 40px;
+    border: none;
+    font-size: 18px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+}
+
+#startBtn.none{
+    display: none;
+}
 h1 {
     font-size: 3rem;
     color: #1f1f1f;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 /* Score Text */
 #score {
     font-size: 1.2rem;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 /* Game Container */

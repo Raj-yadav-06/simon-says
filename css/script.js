@@ -5,13 +5,17 @@ let scoreBoard = document.querySelector("#score");
 let boxes = document.querySelectorAll(".box");
 let level = 0;
 
-document.addEventListener("click" , () => {
+let startBtn = document.querySelector("#startBtn");
+
+
+startBtn.addEventListener("click" , () => {
     if( Starter == false){
         console.log("keypressed")
       Head.innerText= "Game started" ;
       SeqGen();
 
       Starter = true;
+      startBtn.classList.add("none");
     }
 })
 
@@ -67,7 +71,7 @@ console.log("matched");
 
         }
     }else{
-        scoreBoard.innerHTML= `Game Over! Your score is <b>${level}</b> <br> Press any key to start Game`;
+        scoreBoard.innerHTML= `Game Over! Your score is <b>${level}</b> <br> Press button to start Game`;
             document.querySelector("body").style.background= "red";
             setTimeout( function() {
                             document.querySelector("body").style.background = "linear-gradient(to right, #f6f9fc, #e6f0ff)";
@@ -84,6 +88,8 @@ Starter = false;
 level = 0;
 gameSeq = [];
 playerSeq = [];
+      startBtn.classList.remove("none");
+
 }
    
     
