@@ -7,7 +7,7 @@ let level = 0;
 
 let startBtn = document.querySelector("#startBtn");
 
-
+// start
 startBtn.addEventListener("click" , () => {
     if( Starter == false){
         console.log("keypressed")
