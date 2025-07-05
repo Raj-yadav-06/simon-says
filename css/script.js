@@ -5,7 +5,7 @@ let scoreBoard = document.querySelector("#score");
 let boxes = document.querySelectorAll(".box");
 let level = 0;
 
-document.addEventListener("keypress" , () => {
+document.addEventListener("click" , () => {
     if( Starter == false){
         console.log("keypressed")
       Head.innerText= "Game started" ;
