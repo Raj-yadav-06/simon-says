@@ -1,6 +1,6 @@
 let Starter = false;
 let Head = document.querySelector("h1");
-
+console.log("welcome to simon says game");
 let scoreBoard = document.querySelector("#score");
 let boxes = document.querySelectorAll(".box");
 let level = 0;
